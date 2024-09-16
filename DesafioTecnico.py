@@ -66,7 +66,7 @@ class DesafioTecnico:
     def inverter(palavra):
         palavra_invertida = ""
         
-        for letra in palavra_invertida:
+        for letra in palavra:
             palavra_invertida = letra + palavra_invertida
         
         return palavra_invertida
@@ -83,4 +83,4 @@ print(main.faturamento(dados))
 # QUARTA QUESTÃO
 print(main.faturamento_estado())
 # QUINTA QUESTÃO
-print(main.inverter("HelloWorld :)"))
+print(main.inverter("): dlroW olleH"))
