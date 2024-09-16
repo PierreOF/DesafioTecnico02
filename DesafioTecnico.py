@@ -39,8 +39,8 @@ class DesafioTecnico:
         dias_acima_media = sum(1 for valor in faturamento_dias_validos if valor > media_mensal)
 
         return {
-            "Menor Faturamento": menor_faturamento,
-            "Maior Faturamento": maior_faturamento,
+            "Menor Faturamento": round(menor_faturamento,2),
+            "Maior Faturamento": round(maior_faturamento,2),
             "Dias acima da media": dias_acima_media
         }       
 
@@ -59,7 +59,7 @@ class DesafioTecnico:
 
         for estado, valor in faturamento_estados.items():
             percentual = (valor / total_faturamento) * 100
-            faturamento_estados_porcentagem[f'{estado}'] = percentual
+            faturamento_estados_porcentagem[f'{estado}'] = f"{round(percentual,2)}" + "%"
 
         return faturamento_estados_porcentagem
 
